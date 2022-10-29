@@ -1,0 +1,92 @@
+@import "../../../assets/styles/variables.scss";
+
+
+.container{
+    width: 100;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+table{
+    min-width: 80%;
+    margin:auto;
+    text-align: center;;
+}
+
+.mat-header-cell{
+    color:$white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+// Pares
+
+.mat-row:nth-child(even){
+    background: #FDFC47;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+// impares 
+
+.mat-row:nth-child(odd){
+    background: #007991;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+& .mat-cell{
+    color:white;
+}
+}
+
+.mat-cell::first-letter{
+    text-transform: uppercase;
+}
+
+.mat-row:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 3px $white;
+}
+
+::ng-deep.mat-paginator{
+
+    width: 80%;
+    margin: auto;
+
+}
+
+.mat-form.field{
+    font-size: 13px;
+    width: 20%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+::ng-deep.mat-form-field-label{
+    color: $white !important;
+}
+
+::ng-deep.mat-form-field-underline{
+    background-color: $white !important;;
+}
+
+
+
+input{
+    color: $white !important;
+    width: max-content;
+}
+
+::ng-deep.mat-table thead{
+    background-color: $black!important;
+    
+}
+
+::ng-deep.mat-paginator-outer-container{
+    background-color: $black!important;
+    color:$white;
+}

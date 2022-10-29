@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variables.scss";
+
+.card{
+    width: 300px;
+    margin: auto;
+    margin-top: 80px;
+    background: #FFE000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.header-image{
+    background-size: cover;
+}
+
+.mat-card-header{
+    background-color: $white;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.mat-card-title{
+text-transform: uppercase;
+color: black;
+}
+
+.mat-card-subtitle{
+    color: $black;
+}
+
+.mat-chip{
+    background-color: $black !important;
+}
+
+.volver{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 40px;
+}
